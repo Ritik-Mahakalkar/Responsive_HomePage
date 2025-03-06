@@ -1,0 +1,141 @@
+.nevigation_main_container {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 90%;
+    height: 10%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    margin-top: -0px;
+    margin-bottom: -10px;
+    width: 120px;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Navbar Scroll Effect */
+  .navbar.shrink {
+    padding: 10px 30px;
+  }
+  
+  .navbar.shrink .logo {
+    width: 90px;
+    margin-top: -20px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: orange;
+  }
+  
+  /* Mobile Navigation */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      padding: 10px 20px;
+      
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 12px 12px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-active {
+      display: flex;
+    }
+  
+    /* Hamburger Animation */
+    .menu-toggle.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu-toggle.active div:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  
+    .logo {
+      width: 80px;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: -20px;
+      margin-top: -30px;
+    }
+  }
+  

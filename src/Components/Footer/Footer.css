@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 16%;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo img{
+    width: 160px;
+}
+
+
+@media(max-width:800px){
+    .footer{
+        gap:20px
+    }
+    .logo{
+        gap: 10px;
+        align-items: end;
+    }
+    .logo img{
+        width: 70px;
+    }
+    
+}

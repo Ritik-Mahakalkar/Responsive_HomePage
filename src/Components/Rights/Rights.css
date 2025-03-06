@@ -1,0 +1,12 @@
+.rights_footer {
+    margin-top: 10%;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background: linear-gradient(to right, orange,gray);
+     color: white;
+     text-align: center;
+     padding: 10px 0;
+     font-size: 14px;
+     margin-bottom: 10px;
+ }
